@@ -1,7 +1,8 @@
 function KaprekarsConstant(num) {
+  const KAP = 6174;
   var numOfTimestoReachConstant = 1;
   var answer = calculate(num);
-  while (answer !== 6174) {
+  while (answer !== KAP) {
     numOfTimestoReachConstant++;
     var newInput = answer;
     answer = calculate(newInput);
@@ -34,5 +35,4 @@ function calculate(num) {
 // ============ passed test case
 // console.log(KaprekarsConstant(1234));
 // console.log(KaprekarsConstant(5078));
-// ============ causes loop
-console.log(KaprekarsConstant(2111));
+// console.log(KaprekarsConstant(2111));
