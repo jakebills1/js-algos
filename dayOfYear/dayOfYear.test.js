@@ -15,5 +15,8 @@ describe("when passed an invalid dataString as input, it", () => {
     expect(() => {
       dayOfYear.getDayOfYear("fdsahjk");
     }).toThrow();
+    expect(() => {
+      dayOfYear.getDayOfYear("1872-45-12");
+    }).toThrow();
   });
 });
